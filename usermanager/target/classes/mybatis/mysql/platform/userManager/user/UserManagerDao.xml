@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.slef.user.usermanager.dao.UserManagerDao">
+    <select id="selectUser" resultType="com.slef.user.usermanager.bean.User">
+       SELECT us.fname as  name ,us.fage as age FROM USER us limit 0,1
+    </select>
+</mapper>
