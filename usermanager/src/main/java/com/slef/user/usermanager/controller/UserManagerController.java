@@ -17,9 +17,8 @@ public class UserManagerController {
     private UserManagerService userManagerService;
 
     @GetMapping("/getUser")
-    public String pickUser(){
-          User user = userManagerService.selectUser();
-        System.out.println("aa");
+    public String pickUser() {
+        User user = userManagerService.selectUser();
         return "user";
     }
 }
