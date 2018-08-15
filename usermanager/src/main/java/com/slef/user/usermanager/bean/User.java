@@ -1,5 +1,4 @@
 package com.slef.user.usermanager.bean;
-
 public class User {
     private String name;
     private String password;
